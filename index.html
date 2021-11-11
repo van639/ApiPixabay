@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="icon" type="image/png" sizes="15x15" href="img/pixabay-icon.png">
+    <script src="js/Apiscript.js" defer></script>
+    <title>Pixabay API</title>
+</head>
+<body class="column">
+    <header>
+        <div class="centralizar">
+            <div id="imgLogo"></div>
+            <div class="container-pesquisa row">
+                <img src="img/search-240.png">
+                <input id="pesquisa" type="text" placeholder="Busque uma imagem">
+                <div class="categorias">
+                    <select class="row busca-avancada" id="categorias">
+                        <option id="imagem" value="imagens.all">Filtros</option>
+                        <option id="imagem" value="imagens.photo">Fotos</option>
+                        <option id="imagem" value="imagens.vector">Imagens Vetoriais</option>
+                        <option id="imagem" value="imagens.illustration">Ilustrações</option>
+                        <option id="video" value="videos.all">Video</option>
+                    </select>
+                     
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav id="container-categorias">
+            <div class="pesquisa-avancada">
+                <div class="busca-avancada destaque row">
+                    <select id="order" class="font-destaque">
+                        <option id="" value="popular">Destaques</option>
+                        <option id="" value="latest">Recente</option>
+                    </select>
+                    <img class="seta" src="img/down-arrow.png">
+                </div>
+                <div class="busca-avancada row orientacao">
+                    <select id="orientation" class="row">
+                        <option id="" value="">Orientação</option>
+                        <option id="" value="all">Qualquer</option>
+                        <option id="" value="vertical">Vertical</option>
+                        <option id="" value="horizontal">Horizontal</option>
+                    </select>
+                    <img class="seta" src="img/down-arrow.png">
+                </div>
+                <div class="busca-avancada row">
+                    <select id="category" class="row">
+                        <option id="" value="">Categoria</option>
+                        <option id="" value="feelings">Animais</option>
+                        <option id="" value="computer">Computador</option>
+                        <option id="" value="food">Comida</option>
+                        <option id="" value="sports">Esportes</option>
+                        <option id="" value="buildings">Edifícios</option>
+                        <option id="" value="music">Musica</option>
+                    </select>
+                    <img class="seta" src="img/down-arrow.png">
+                </div>
+                <div class="busca-avancada row cor">
+                    <select id="color" class="row">
+                        <option value="">Cores</option>
+                        <option value="transparent">Transparente</option>
+                        <option value="grayscale">Preto e Branco</option>
+                        <option value="red">Vermelho</option>
+                        <option value="blue">Azul</option>
+                        <option value="yellow">Amarelo</option>
+                        <option value="green">Verde</option>
+                        <option value="turquoise">Turquesa</option>
+                        <option value="pink">Rosa</option>
+                        <option value="orange">Laranja</option>
+                        <option value="white">Branco</option>
+                    </select>
+                    <img class="seta"src="img/down-arrow.png">  
+                </div>
+                    <input class="pagina"type="text" value="" id="pagina">
+            </div>
+    </nav>
+    <main class="column">
+        <div class="centralizar">
+            <div class="status">
+            </div>
+        </div>
+         <div id="container-galeria">
+             
+         </div>   
+    </main>
+    <footer>
+        <span>Copyright &copy; 2021| Vanderson Aparecido</span>
+    </footer>
+</body>
+</html>
